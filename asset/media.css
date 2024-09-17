@@ -1,0 +1,62 @@
+/* modbile phone view */
+@media screen and (max-width:600px) {
+    .container {
+        width: 100%;
+        height: auto;
+    }
+    .row {
+        width: 100%;
+        height: inherit;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container .row .col:nth-child(1) {
+        width: 100%;
+        height: inherit;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .row .col:nth-child(2) {
+        display: none;
+    }
+    
+}
+
+/* ipad view */
+@media (min-width:600px) and (max-width:1024px) {
+    .container {
+        width: 100%;
+        height: auto;;
+    }
+
+    .row {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container .row .col:nth-child(2) {
+        width: 100%;
+        height: 800px;
+        background-image: linear-gradient(45deg, rgb(2, 59, 133), rgb(2, 77, 64), rgb(16, 119, 214));
+    }
+
+    .container .row .col:nth-child(1) {
+        width: 100%;
+        height: 30%;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+    
+    
